@@ -12,6 +12,7 @@
 
 - Soroban Domains ([CATRN…2UMKI](https://stellar.expert/explorer/public/contract/CATRNPHYKNXAPNLHEYH55REB6YSAJLGCPA4YM6L3WUKSZOPI77M2UMKI))
     - [Domain Set Record](./data/domain-set-record.json)
+    - [Domain Burn Record](./data/domain-burn-record.json)
 
 - Soroswap ([CA4HE…Z7AW2](https://stellar.expert/explorer/public/contract/CA4HEQTL2WPEUYKYKCDOHCDNIV4QHNJ7EL4J4NQ6VADP7SYHVRYZ7AW2))
     - [Add Liquidity](./data/liquidity-add.json)
