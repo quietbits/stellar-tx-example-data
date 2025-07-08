@@ -31,6 +31,14 @@
     - [Asset Swap](./data/asset-swap.json)
     - [Asset Submit](./data/asset-submit.json)
 
+- KALE ([CDL74…AIGWA](https://stellar.expert/explorer/public/contract/CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA))
+  - [Work](data/kale-work.json) (fee bump)
+  - [Plant](data/kale-plant.json) (fee bump)
+  - [Harvest](data/kale-harvest.json) (fee bump)
+
+- AQUA:LLTC liquidity pool ([f879e…6a1aa](https://stellar.expert/explorer/public/liquidity-pool/f879e02da015de4161f37870e07770bf2d7b5a7af8c44a614315d3068e56a1aa))
+  - [Swap](data/lp-swap.json) (classic)
+
 ## Data Structure
 
 `resultMetaJson` > `v3` > `operations`

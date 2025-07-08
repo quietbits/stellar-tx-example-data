@@ -1,0 +1,2155 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "latestLedger": 57909333,
+    "latestLedgerCloseTime": "1751984010",
+    "oldestLedger": 57788374,
+    "oldestLedgerCloseTime": "1751297889",
+    "status": "SUCCESS",
+    "txHash": "f2588ae4ccb50160f645d3eca3defbc2c52e8caf476c0fced75e4adcb4ca2b09",
+    "applicationOrder": 311,
+    "feeBump": true,
+    "envelopeJson": {
+      "tx_fee_bump": {
+        "tx": {
+          "fee_source": "GBGWQFSJSOMJ2BTOH5RLZUTZPV544YR2DF5CGYL7WDZ2Y6OSRHR6TUBE",
+          "fee": 192194,
+          "inner_tx": {
+            "tx": {
+              "tx": {
+                "source_account": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS",
+                "fee": 191992,
+                "seq_num": 248178152554106800,
+                "cond": {
+                  "time": {
+                    "min_time": 0,
+                    "max_time": 1751983908
+                  }
+                },
+                "memo": "none",
+                "operations": [
+                  {
+                    "source_account": null,
+                    "body": {
+                      "invoke_host_function": {
+                        "host_function": {
+                          "invoke_contract": {
+                            "contract_address": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                            "function_name": "work",
+                            "args": [
+                              {
+                                "address": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS"
+                              },
+                              {
+                                "bytes": "000000983d053aa8f23c86c780bc41d438c44149ce5fcd1fc9d80a1ff905e13f"
+                              },
+                              {
+                                "u64": 19361149
+                              }
+                            ]
+                          }
+                        },
+                        "auth": []
+                      }
+                    }
+                  }
+                ],
+                "ext": {
+                  "v1": {
+                    "ext": "v0",
+                    "resources": {
+                      "footprint": {
+                        "read_only": [
+                          {
+                            "contract_code": {
+                              "hash": "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+                            }
+                          }
+                        ],
+                        "read_write": [
+                          {
+                            "contract_data": {
+                              "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "Block"
+                                  },
+                                  {
+                                    "u32": 64768
+                                  }
+                                ]
+                              },
+                              "durability": "temporary"
+                            }
+                          },
+                          {
+                            "contract_data": {
+                              "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "Pail"
+                                  },
+                                  {
+                                    "address": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS"
+                                  },
+                                  {
+                                    "u32": 64768
+                                  }
+                                ]
+                              },
+                              "durability": "temporary"
+                            }
+                          },
+                          {
+                            "contract_data": {
+                              "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                              "key": "ledger_key_contract_instance",
+                              "durability": "persistent"
+                            }
+                          }
+                        ]
+                      },
+                      "instructions": 4412916,
+                      "read_bytes": 21064,
+                      "write_bytes": 1480
+                    },
+                    "resource_fee": 191992
+                  }
+                }
+              },
+              "signatures": [
+                {
+                  "hint": "c8ca7ecf",
+                  "signature": "d6c607c614ec4c85a13146948331ca988a3ce3f74525ce7d8da1bf2145fedba3c399d78f9bf053b55852ed060a6dea75a9b8267c24ec0483a1785a88c640ab05"
+                }
+              ]
+            }
+          },
+          "ext": "v0"
+        },
+        "signatures": [
+          {
+            "hint": "d289e3e9",
+            "signature": "687b84bf4b0f816eb82758e45ce69eee6605568504fc007fb3b4b5d0239dea9d10d6901d37ba3bf18bff139d89d2dba43f5d3b904eb989a937e08fb6a9826000"
+          }
+        ]
+      }
+    },
+    "resultJson": {
+      "fee_charged": 135009,
+      "result": {
+        "tx_fee_bump_inner_success": {
+          "transaction_hash": "749c87e55003ca7b7fdab024f0db9dd26d4780ac0723914f2401ec9b072eacb9",
+          "result": {
+            "fee_charged": 134809,
+            "result": {
+              "tx_success": [
+                {
+                  "op_inner": {
+                    "invoke_host_function": {
+                      "success": "c89a843be2f704608d3b4680397a6a5cf30bb4e2809890e69accba4a803e6b8a"
+                    }
+                  }
+                }
+              ]
+            },
+            "ext": "v0"
+          }
+        }
+      },
+      "ext": "v0"
+    },
+    "resultMetaJson": {
+      "v3": {
+        "ext": "v0",
+        "tx_changes_before": [
+          {
+            "state": {
+              "last_modified_ledger_seq": 57909311,
+              "data": {
+                "account": {
+                  "account_id": "GBGWQFSJSOMJ2BTOH5RLZUTZPV544YR2DF5CGYL7WDZ2Y6OSRHR6TUBE",
+                  "balance": 2538664062548,
+                  "seq_num": 230650163385860100,
+                  "num_sub_entries": 0,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 56088316,
+                              "seq_time": 1741615515
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          },
+          {
+            "updated": {
+              "last_modified_ledger_seq": 57909311,
+              "data": {
+                "account": {
+                  "account_id": "GBGWQFSJSOMJ2BTOH5RLZUTZPV544YR2DF5CGYL7WDZ2Y6OSRHR6TUBE",
+                  "balance": 2538664062548,
+                  "seq_num": 230650163385860100,
+                  "num_sub_entries": 0,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 56088316,
+                              "seq_time": 1741615515
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          },
+          {
+            "state": {
+              "last_modified_ledger_seq": 57909300,
+              "data": {
+                "account": {
+                  "account_id": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS",
+                  "balance": 19999902,
+                  "seq_num": 248178152554106800,
+                  "num_sub_entries": 1,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 57909300,
+                              "seq_time": 1751983823
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          },
+          {
+            "updated": {
+              "last_modified_ledger_seq": 57909311,
+              "data": {
+                "account": {
+                  "account_id": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS",
+                  "balance": 19999902,
+                  "seq_num": 248178152554106800,
+                  "num_sub_entries": 1,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 57909311,
+                              "seq_time": 1751983886
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          }
+        ],
+        "operations": [
+          {
+            "changes": [
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57909300,
+                  "data": {
+                    "contract_data": {
+                      "ext": "v0",
+                      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                      "key": {
+                        "vec": [
+                          {
+                            "symbol": "Pail"
+                          },
+                          {
+                            "address": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS"
+                          },
+                          {
+                            "u32": 64768
+                          }
+                        ]
+                      },
+                      "durability": "temporary",
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "gap"
+                            },
+                            "val": "void"
+                          },
+                          {
+                            "key": {
+                              "symbol": "sequence"
+                            },
+                            "val": {
+                              "u32": 57909300
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "stake"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 100000000
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "zeros"
+                            },
+                            "val": "void"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57909311,
+                  "data": {
+                    "contract_data": {
+                      "ext": "v0",
+                      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                      "key": {
+                        "vec": [
+                          {
+                            "symbol": "Pail"
+                          },
+                          {
+                            "address": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS"
+                          },
+                          {
+                            "u32": 64768
+                          }
+                        ]
+                      },
+                      "durability": "temporary",
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "gap"
+                            },
+                            "val": {
+                              "u32": 11
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "sequence"
+                            },
+                            "val": {
+                              "u32": 57909300
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "stake"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 100000000
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "zeros"
+                            },
+                            "val": {
+                              "u32": 6
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57909311,
+                  "data": {
+                    "contract_data": {
+                      "ext": "v0",
+                      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                      "key": "ledger_key_contract_instance",
+                      "durability": "persistent",
+                      "val": {
+                        "contract_instance": {
+                          "executable": {
+                            "wasm": "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+                          },
+                          "storage": [
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "FarmBlock"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "entropy"
+                                    },
+                                    "val": {
+                                      "bytes": "0000009c6c5c664e23b0fad96162daa57816721c02664b300b4e463939d6a4ea"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "max_gap"
+                                    },
+                                    "val": {
+                                      "u32": 5
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "max_stake"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 1000000000
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "max_zeros"
+                                    },
+                                    "val": {
+                                      "u32": 6
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "min_gap"
+                                    },
+                                    "val": {
+                                      "u32": 5
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "min_stake"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 0
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "min_zeros"
+                                    },
+                                    "val": {
+                                      "u32": 6
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "normalized_total"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 0
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "staked_total"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 0
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "timestamp"
+                                    },
+                                    "val": {
+                                      "u64": 1751983823
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "FarmEntropy"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "bytes": "00000008aae979415c155306b5d139fcf4ce42d0efdd5550e2ea9ccc6a389139"
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "FarmIndex"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "u32": 64768
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "HomesteadAsset"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "address": "CB23WRDQWGSP6YPMY4UV5C4OW5CBTXKYN3XEATG7KJEZCXMJBYEHOUOV"
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "Homesteader"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "address": "GBDVX4VELCDSQ54KQJYTNHXAHFLBCA77ZY2USQBM4CSHTTV7DME7KALE"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57909311,
+                  "data": {
+                    "contract_data": {
+                      "ext": "v0",
+                      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                      "key": "ledger_key_contract_instance",
+                      "durability": "persistent",
+                      "val": {
+                        "contract_instance": {
+                          "executable": {
+                            "wasm": "db2c14290d4964e3805f2527dd132939ba5fb3fccac56b30bfab8fd091011627"
+                          },
+                          "storage": [
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "FarmBlock"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "map": [
+                                  {
+                                    "key": {
+                                      "symbol": "entropy"
+                                    },
+                                    "val": {
+                                      "bytes": "000000983d053aa8f23c86c780bc41d438c44149ce5fcd1fc9d80a1ff905e13f"
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "max_gap"
+                                    },
+                                    "val": {
+                                      "u32": 11
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "max_stake"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 1000000000
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "max_zeros"
+                                    },
+                                    "val": {
+                                      "u32": 6
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "min_gap"
+                                    },
+                                    "val": {
+                                      "u32": 5
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "min_stake"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 0
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "min_zeros"
+                                    },
+                                    "val": {
+                                      "u32": 6
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "normalized_total"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 0
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "staked_total"
+                                    },
+                                    "val": {
+                                      "i128": {
+                                        "hi": 0,
+                                        "lo": 0
+                                      }
+                                    }
+                                  },
+                                  {
+                                    "key": {
+                                      "symbol": "timestamp"
+                                    },
+                                    "val": {
+                                      "u64": 1751983823
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "FarmEntropy"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "bytes": "00000008aae979415c155306b5d139fcf4ce42d0efdd5550e2ea9ccc6a389139"
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "FarmIndex"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "u32": 64768
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "HomesteadAsset"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "address": "CB23WRDQWGSP6YPMY4UV5C4OW5CBTXKYN3XEATG7KJEZCXMJBYEHOUOV"
+                              }
+                            },
+                            {
+                              "key": {
+                                "vec": [
+                                  {
+                                    "symbol": "Homesteader"
+                                  }
+                                ]
+                              },
+                              "val": {
+                                "address": "GBDVX4VELCDSQ54KQJYTNHXAHFLBCA77ZY2USQBM4CSHTTV7DME7KALE"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57909311,
+                  "data": {
+                    "contract_data": {
+                      "ext": "v0",
+                      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                      "key": {
+                        "vec": [
+                          {
+                            "symbol": "Block"
+                          },
+                          {
+                            "u32": 64768
+                          }
+                        ]
+                      },
+                      "durability": "temporary",
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "entropy"
+                            },
+                            "val": {
+                              "bytes": "000000ad183d0d4a773f9f5de0e507c358ddca157bcae54a4df6d4dd3bd76b66"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "max_gap"
+                            },
+                            "val": {
+                              "u32": 52
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "max_stake"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 1000000000
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "max_zeros"
+                            },
+                            "val": {
+                              "u32": 9
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "min_gap"
+                            },
+                            "val": {
+                              "u32": 1
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "min_stake"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 0
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "min_zeros"
+                            },
+                            "val": {
+                              "u32": 5
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "normalized_total"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 428431372
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "staked_total"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 31108000000
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "timestamp"
+                            },
+                            "val": {
+                              "u64": 1751983823
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57909311,
+                  "data": {
+                    "contract_data": {
+                      "ext": "v0",
+                      "contract": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                      "key": {
+                        "vec": [
+                          {
+                            "symbol": "Block"
+                          },
+                          {
+                            "u32": 64768
+                          }
+                        ]
+                      },
+                      "durability": "temporary",
+                      "val": {
+                        "map": [
+                          {
+                            "key": {
+                              "symbol": "entropy"
+                            },
+                            "val": {
+                              "bytes": "000000ad183d0d4a773f9f5de0e507c358ddca157bcae54a4df6d4dd3bd76b66"
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "max_gap"
+                            },
+                            "val": {
+                              "u32": 52
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "max_stake"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 1000000000
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "max_zeros"
+                            },
+                            "val": {
+                              "u32": 9
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "min_gap"
+                            },
+                            "val": {
+                              "u32": 1
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "min_stake"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 0
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "min_zeros"
+                            },
+                            "val": {
+                              "u32": 5
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "normalized_total"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 974509803
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "staked_total"
+                            },
+                            "val": {
+                              "i128": {
+                                "hi": 0,
+                                "lo": 31008000000
+                              }
+                            }
+                          },
+                          {
+                            "key": {
+                              "symbol": "timestamp"
+                            },
+                            "val": {
+                              "u64": 1751983823
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              }
+            ]
+          }
+        ],
+        "tx_changes_after": [
+          {
+            "state": {
+              "last_modified_ledger_seq": 57909311,
+              "data": {
+                "account": {
+                  "account_id": "GBGWQFSJSOMJ2BTOH5RLZUTZPV544YR2DF5CGYL7WDZ2Y6OSRHR6TUBE",
+                  "balance": 2538664062548,
+                  "seq_num": 230650163385860100,
+                  "num_sub_entries": 0,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 56088316,
+                              "seq_time": 1741615515
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          },
+          {
+            "updated": {
+              "last_modified_ledger_seq": 57909311,
+              "data": {
+                "account": {
+                  "account_id": "GBGWQFSJSOMJ2BTOH5RLZUTZPV544YR2DF5CGYL7WDZ2Y6OSRHR6TUBE",
+                  "balance": 2538664119731,
+                  "seq_num": 230650163385860100,
+                  "num_sub_entries": 0,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 56088316,
+                              "seq_time": 1741615515
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          }
+        ],
+        "soroban_meta": {
+          "ext": {
+            "v1": {
+              "ext": "v0",
+              "total_non_refundable_resource_fee_charged": 134380,
+              "total_refundable_resource_fee_charged": 429,
+              "rent_fee_charged": 350
+            }
+          },
+          "events": [],
+          "return_value": {
+            "u32": 11
+          },
+          "diagnostic_events": [
+            {
+              "in_successful_contract_call": true,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "fn_call"
+                      },
+                      {
+                        "bytes": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04"
+                      },
+                      {
+                        "symbol": "work"
+                      }
+                    ],
+                    "data": {
+                      "vec": [
+                        {
+                          "address": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS"
+                        },
+                        {
+                          "bytes": "000000983d053aa8f23c86c780bc41d438c44149ce5fcd1fc9d80a1ff905e13f"
+                        },
+                        {
+                          "u64": 19361149
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": true,
+              "event": {
+                "ext": "v0",
+                "contract_id": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04",
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "fn_return"
+                      },
+                      {
+                        "symbol": "work"
+                      }
+                    ],
+                    "data": {
+                      "u32": 11
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "read_entry"
+                      }
+                    ],
+                    "data": {
+                      "u64": 4
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "write_entry"
+                      }
+                    ],
+                    "data": {
+                      "u64": 3
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "ledger_read_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 21064
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "ledger_write_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 1480
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "read_key_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 284
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "write_key_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 0
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "read_data_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 1472
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "write_data_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 1480
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "read_code_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 19592
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "write_code_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 0
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "emit_event"
+                      }
+                    ],
+                    "data": {
+                      "u64": 0
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "emit_event_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 0
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "cpu_insn"
+                      }
+                    ],
+                    "data": {
+                      "u64": 4209916
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "mem_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 2044276
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "invoke_time_nsecs"
+                      }
+                    ],
+                    "data": {
+                      "u64": 568227
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "max_rw_key_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 120
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "max_rw_data_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 772
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "max_rw_code_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 19592
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "in_successful_contract_call": false,
+              "event": {
+                "ext": "v0",
+                "contract_id": null,
+                "type_": "diagnostic",
+                "body": {
+                  "v0": {
+                    "topics": [
+                      {
+                        "symbol": "core_metrics"
+                      },
+                      {
+                        "symbol": "max_emit_event_byte"
+                      }
+                    ],
+                    "data": {
+                      "u64": 0
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "diagnosticEventsJson": [
+      {
+        "in_successful_contract_call": true,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "fn_call"
+                },
+                {
+                  "bytes": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04"
+                },
+                {
+                  "symbol": "work"
+                }
+              ],
+              "data": {
+                "vec": [
+                  {
+                    "address": "GDBOBJ5B5HKVSHSD4W6F3SMSEO3QG43AN3642F2NN7SPFSOIZJ7M7VRS"
+                  },
+                  {
+                    "bytes": "000000983d053aa8f23c86c780bc41d438c44149ce5fcd1fc9d80a1ff905e13f"
+                  },
+                  {
+                    "u64": 19361149
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": true,
+        "event": {
+          "ext": "v0",
+          "contract_id": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04",
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "fn_return"
+                },
+                {
+                  "symbol": "work"
+                }
+              ],
+              "data": {
+                "u32": 11
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "read_entry"
+                }
+              ],
+              "data": {
+                "u64": 4
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "write_entry"
+                }
+              ],
+              "data": {
+                "u64": 3
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "ledger_read_byte"
+                }
+              ],
+              "data": {
+                "u64": 21064
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "ledger_write_byte"
+                }
+              ],
+              "data": {
+                "u64": 1480
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "read_key_byte"
+                }
+              ],
+              "data": {
+                "u64": 284
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "write_key_byte"
+                }
+              ],
+              "data": {
+                "u64": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "read_data_byte"
+                }
+              ],
+              "data": {
+                "u64": 1472
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "write_data_byte"
+                }
+              ],
+              "data": {
+                "u64": 1480
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "read_code_byte"
+                }
+              ],
+              "data": {
+                "u64": 19592
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "write_code_byte"
+                }
+              ],
+              "data": {
+                "u64": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "emit_event"
+                }
+              ],
+              "data": {
+                "u64": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "emit_event_byte"
+                }
+              ],
+              "data": {
+                "u64": 0
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "cpu_insn"
+                }
+              ],
+              "data": {
+                "u64": 4209916
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "mem_byte"
+                }
+              ],
+              "data": {
+                "u64": 2044276
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "invoke_time_nsecs"
+                }
+              ],
+              "data": {
+                "u64": 568227
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "max_rw_key_byte"
+                }
+              ],
+              "data": {
+                "u64": 120
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "max_rw_data_byte"
+                }
+              ],
+              "data": {
+                "u64": 772
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "max_rw_code_byte"
+                }
+              ],
+              "data": {
+                "u64": 19592
+              }
+            }
+          }
+        }
+      },
+      {
+        "in_successful_contract_call": false,
+        "event": {
+          "ext": "v0",
+          "contract_id": null,
+          "type_": "diagnostic",
+          "body": {
+            "v0": {
+              "topics": [
+                {
+                  "symbol": "core_metrics"
+                },
+                {
+                  "symbol": "max_emit_event_byte"
+                }
+              ],
+              "data": {
+                "u64": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "ledger": 57909311,
+    "createdAt": "1751983886"
+  }
+}

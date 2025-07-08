@@ -1,0 +1,599 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "latestLedger": 57909513,
+    "latestLedgerCloseTime": "1751985028",
+    "oldestLedger": 57788554,
+    "oldestLedgerCloseTime": "1751298913",
+    "status": "SUCCESS",
+    "txHash": "607712371cff0c5eea5713f8ff09652c3ddac577ffe9f11d82d55597784e7776",
+    "applicationOrder": 84,
+    "feeBump": false,
+    "envelopeJson": {
+      "tx": {
+        "tx": {
+          "source_account": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+          "fee": 102,
+          "seq_num": 163275105903986180,
+          "cond": {
+            "time": {
+              "min_time": 0,
+              "max_time": 1751746608
+            }
+          },
+          "memo": "none",
+          "operations": [
+            {
+              "source_account": null,
+              "body": {
+                "path_payment_strict_receive": {
+                  "send_asset": {
+                    "credit_alphanum12": {
+                      "asset_code": "LIBRE",
+                      "issuer": "GAYCCWKECNGDRHYU3UTREBD2XLC3CUQN6FV22TKM4WCQER3IWR7TF5CY"
+                    }
+                  },
+                  "send_max": 180000000,
+                  "destination": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                  "dest_asset": {
+                    "credit_alphanum12": {
+                      "asset_code": "TwiNz",
+                      "issuer": "GDKS7XTNEVCPGVUT2ZPPOU5CHHF3NH6NX7P3ROSFSDAO6NQDS3C74Y6C"
+                    }
+                  },
+                  "dest_amount": 2000,
+                  "path": [
+                    {
+                      "credit_alphanum4": {
+                        "asset_code": "LLTC",
+                        "issuer": "GATD6BVKVBJLZVQRTT7Q5ACTGVIBWTYTUJOKWB6NKF4RF5O62Q4YCUTM"
+                      }
+                    },
+                    {
+                      "credit_alphanum4": {
+                        "asset_code": "AQUA",
+                        "issuer": "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "ext": "v0"
+        },
+        "signatures": [
+          {
+            "hint": "cbeca0c4",
+            "signature": "1138738af4a32c271f433390ec357ddd8ad12e8916f8dd785031970879dc8ac951812badb75fc409067b80c5da5801fb285f93c800fa7bd091e68ab46041fb0d"
+          }
+        ]
+      }
+    },
+    "resultJson": {
+      "fee_charged": 100,
+      "result": {
+        "tx_success": [
+          {
+            "op_inner": {
+              "path_payment_strict_receive": {
+                "success": {
+                  "offers": [
+                    {
+                      "liquidity_pool": {
+                        "liquidity_pool_id": "3e343c4f4a91d714bcf2a508adca1f78d073a010a8eada47046b728b82b319aa",
+                        "asset_sold": {
+                          "credit_alphanum4": {
+                            "asset_code": "LLTC",
+                            "issuer": "GATD6BVKVBJLZVQRTT7Q5ACTGVIBWTYTUJOKWB6NKF4RF5O62Q4YCUTM"
+                          }
+                        },
+                        "amount_sold": 101383443801,
+                        "asset_bought": {
+                          "credit_alphanum12": {
+                            "asset_code": "LIBRE",
+                            "issuer": "GAYCCWKECNGDRHYU3UTREBD2XLC3CUQN6FV22TKM4WCQER3IWR7TF5CY"
+                          }
+                        },
+                        "amount_bought": 15364
+                      }
+                    },
+                    {
+                      "liquidity_pool": {
+                        "liquidity_pool_id": "f879e02da015de4161f37870e07770bf2d7b5a7af8c44a614315d3068e56a1aa",
+                        "asset_sold": {
+                          "credit_alphanum4": {
+                            "asset_code": "AQUA",
+                            "issuer": "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA"
+                          }
+                        },
+                        "amount_sold": 13228,
+                        "asset_bought": {
+                          "credit_alphanum4": {
+                            "asset_code": "LLTC",
+                            "issuer": "GATD6BVKVBJLZVQRTT7Q5ACTGVIBWTYTUJOKWB6NKF4RF5O62Q4YCUTM"
+                          }
+                        },
+                        "amount_bought": 101383443801
+                      }
+                    },
+                    {
+                      "liquidity_pool": {
+                        "liquidity_pool_id": "735d6c4ef5393ef396de03180b392c0f2df271311d26039f87183eeae7502ec1",
+                        "asset_sold": {
+                          "credit_alphanum12": {
+                            "asset_code": "TwiNz",
+                            "issuer": "GDKS7XTNEVCPGVUT2ZPPOU5CHHF3NH6NX7P3ROSFSDAO6NQDS3C74Y6C"
+                          }
+                        },
+                        "amount_sold": 2000,
+                        "asset_bought": {
+                          "credit_alphanum4": {
+                            "asset_code": "AQUA",
+                            "issuer": "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA"
+                          }
+                        },
+                        "amount_bought": 13228
+                      }
+                    }
+                  ],
+                  "last": {
+                    "destination": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                    "asset": {
+                      "credit_alphanum12": {
+                        "asset_code": "TwiNz",
+                        "issuer": "GDKS7XTNEVCPGVUT2ZPPOU5CHHF3NH6NX7P3ROSFSDAO6NQDS3C74Y6C"
+                      }
+                    },
+                    "amount": 2000
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ext": "v0"
+    },
+    "resultMetaJson": {
+      "v3": {
+        "ext": "v0",
+        "tx_changes_before": [
+          {
+            "state": {
+              "last_modified_ledger_seq": 57867582,
+              "data": {
+                "account": {
+                  "account_id": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                  "balance": 456101788,
+                  "seq_num": 163275105903986180,
+                  "num_sub_entries": 89,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "stellarterm.com",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 57867580,
+                              "seq_time": 1751746421
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          },
+          {
+            "updated": {
+              "last_modified_ledger_seq": 57867582,
+              "data": {
+                "account": {
+                  "account_id": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                  "balance": 456101788,
+                  "seq_num": 163275105903986180,
+                  "num_sub_entries": 89,
+                  "inflation_dest": null,
+                  "flags": 0,
+                  "home_domain": "stellarterm.com",
+                  "thresholds": "01000000",
+                  "signers": [],
+                  "ext": {
+                    "v1": {
+                      "liabilities": {
+                        "buying": 0,
+                        "selling": 0
+                      },
+                      "ext": {
+                        "v2": {
+                          "num_sponsored": 0,
+                          "num_sponsoring": 0,
+                          "signer_sponsoring_i_ds": [],
+                          "ext": {
+                            "v3": {
+                              "ext": "v0",
+                              "seq_ledger": 57867582,
+                              "seq_time": 1751746432
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ext": "v0"
+            }
+          }
+        ],
+        "operations": [
+          {
+            "changes": [
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57867580,
+                  "data": {
+                    "trustline": {
+                      "account_id": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                      "asset": {
+                        "credit_alphanum12": {
+                          "asset_code": "LIBRE",
+                          "issuer": "GAYCCWKECNGDRHYU3UTREBD2XLC3CUQN6FV22TKM4WCQER3IWR7TF5CY"
+                        }
+                      },
+                      "balance": 35629128,
+                      "limit": 9223372036854776000,
+                      "flags": 1,
+                      "ext": {
+                        "v1": {
+                          "liabilities": {
+                            "buying": 0,
+                            "selling": 0
+                          },
+                          "ext": {
+                            "v2": {
+                              "liquidity_pool_use_count": 4,
+                              "ext": "v0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57867582,
+                  "data": {
+                    "trustline": {
+                      "account_id": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                      "asset": {
+                        "credit_alphanum12": {
+                          "asset_code": "LIBRE",
+                          "issuer": "GAYCCWKECNGDRHYU3UTREBD2XLC3CUQN6FV22TKM4WCQER3IWR7TF5CY"
+                        }
+                      },
+                      "balance": 35613764,
+                      "limit": 9223372036854776000,
+                      "flags": 1,
+                      "ext": {
+                        "v1": {
+                          "liabilities": {
+                            "buying": 0,
+                            "selling": 0
+                          },
+                          "ext": {
+                            "v2": {
+                              "liquidity_pool_use_count": 4,
+                              "ext": "v0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57867580,
+                  "data": {
+                    "liquidity_pool": {
+                      "liquidity_pool_id": "3e343c4f4a91d714bcf2a508adca1f78d073a010a8eada47046b728b82b319aa",
+                      "body": {
+                        "liquidity_pool_constant_product": {
+                          "params": {
+                            "asset_a": {
+                              "credit_alphanum4": {
+                                "asset_code": "LLTC",
+                                "issuer": "GATD6BVKVBJLZVQRTT7Q5ACTGVIBWTYTUJOKWB6NKF4RF5O62Q4YCUTM"
+                              }
+                            },
+                            "asset_b": {
+                              "credit_alphanum12": {
+                                "asset_code": "LIBRE",
+                                "issuer": "GAYCCWKECNGDRHYU3UTREBD2XLC3CUQN6FV22TKM4WCQER3IWR7TF5CY"
+                              }
+                            },
+                            "fee": 30
+                          },
+                          "reserve_a": 26668131238122412,
+                          "reserve_b": 4029118762,
+                          "total_pool_shares": 10362154024964,
+                          "pool_shares_trust_line_count": 1
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57867582,
+                  "data": {
+                    "liquidity_pool": {
+                      "liquidity_pool_id": "3e343c4f4a91d714bcf2a508adca1f78d073a010a8eada47046b728b82b319aa",
+                      "body": {
+                        "liquidity_pool_constant_product": {
+                          "params": {
+                            "asset_a": {
+                              "credit_alphanum4": {
+                                "asset_code": "LLTC",
+                                "issuer": "GATD6BVKVBJLZVQRTT7Q5ACTGVIBWTYTUJOKWB6NKF4RF5O62Q4YCUTM"
+                              }
+                            },
+                            "asset_b": {
+                              "credit_alphanum12": {
+                                "asset_code": "LIBRE",
+                                "issuer": "GAYCCWKECNGDRHYU3UTREBD2XLC3CUQN6FV22TKM4WCQER3IWR7TF5CY"
+                              }
+                            },
+                            "fee": 30
+                          },
+                          "reserve_a": 26668029854678610,
+                          "reserve_b": 4029134126,
+                          "total_pool_shares": 10362154024964,
+                          "pool_shares_trust_line_count": 1
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57867580,
+                  "data": {
+                    "liquidity_pool": {
+                      "liquidity_pool_id": "f879e02da015de4161f37870e07770bf2d7b5a7af8c44a614315d3068e56a1aa",
+                      "body": {
+                        "liquidity_pool_constant_product": {
+                          "params": {
+                            "asset_a": {
+                              "credit_alphanum4": {
+                                "asset_code": "AQUA",
+                                "issuer": "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA"
+                              }
+                            },
+                            "asset_b": {
+                              "credit_alphanum4": {
+                                "asset_code": "LLTC",
+                                "issuer": "GATD6BVKVBJLZVQRTT7Q5ACTGVIBWTYTUJOKWB6NKF4RF5O62Q4YCUTM"
+                              }
+                            },
+                            "fee": 30
+                          },
+                          "reserve_a": 13659281,
+                          "reserve_b": 104273767453538,
+                          "total_pool_shares": 37498920763,
+                          "pool_shares_trust_line_count": 1
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57867582,
+                  "data": {
+                    "liquidity_pool": {
+                      "liquidity_pool_id": "f879e02da015de4161f37870e07770bf2d7b5a7af8c44a614315d3068e56a1aa",
+                      "body": {
+                        "liquidity_pool_constant_product": {
+                          "params": {
+                            "asset_a": {
+                              "credit_alphanum4": {
+                                "asset_code": "AQUA",
+                                "issuer": "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA"
+                              }
+                            },
+                            "asset_b": {
+                              "credit_alphanum4": {
+                                "asset_code": "LLTC",
+                                "issuer": "GATD6BVKVBJLZVQRTT7Q5ACTGVIBWTYTUJOKWB6NKF4RF5O62Q4YCUTM"
+                              }
+                            },
+                            "fee": 30
+                          },
+                          "reserve_a": 13646053,
+                          "reserve_b": 104375150897339,
+                          "total_pool_shares": 37498920763,
+                          "pool_shares_trust_line_count": 1
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57867580,
+                  "data": {
+                    "liquidity_pool": {
+                      "liquidity_pool_id": "735d6c4ef5393ef396de03180b392c0f2df271311d26039f87183eeae7502ec1",
+                      "body": {
+                        "liquidity_pool_constant_product": {
+                          "params": {
+                            "asset_a": {
+                              "credit_alphanum4": {
+                                "asset_code": "AQUA",
+                                "issuer": "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA"
+                              }
+                            },
+                            "asset_b": {
+                              "credit_alphanum12": {
+                                "asset_code": "TwiNz",
+                                "issuer": "GDKS7XTNEVCPGVUT2ZPPOU5CHHF3NH6NX7P3ROSFSDAO6NQDS3C74Y6C"
+                              }
+                            },
+                            "fee": 30
+                          },
+                          "reserve_a": 131341738355,
+                          "reserve_b": 19919239136,
+                          "total_pool_shares": 39255466997,
+                          "pool_shares_trust_line_count": 1
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57867582,
+                  "data": {
+                    "liquidity_pool": {
+                      "liquidity_pool_id": "735d6c4ef5393ef396de03180b392c0f2df271311d26039f87183eeae7502ec1",
+                      "body": {
+                        "liquidity_pool_constant_product": {
+                          "params": {
+                            "asset_a": {
+                              "credit_alphanum4": {
+                                "asset_code": "AQUA",
+                                "issuer": "GBNZILSTVQZ4R7IKQDGHYGY2QXL5QOFJYQMXPKWRRM5PAV7Y4M67AQUA"
+                              }
+                            },
+                            "asset_b": {
+                              "credit_alphanum12": {
+                                "asset_code": "TwiNz",
+                                "issuer": "GDKS7XTNEVCPGVUT2ZPPOU5CHHF3NH6NX7P3ROSFSDAO6NQDS3C74Y6C"
+                              }
+                            },
+                            "fee": 30
+                          },
+                          "reserve_a": 131341751583,
+                          "reserve_b": 19919237136,
+                          "total_pool_shares": 39255466997,
+                          "pool_shares_trust_line_count": 1
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "state": {
+                  "last_modified_ledger_seq": 57867580,
+                  "data": {
+                    "trustline": {
+                      "account_id": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                      "asset": {
+                        "credit_alphanum12": {
+                          "asset_code": "TwiNz",
+                          "issuer": "GDKS7XTNEVCPGVUT2ZPPOU5CHHF3NH6NX7P3ROSFSDAO6NQDS3C74Y6C"
+                        }
+                      },
+                      "balance": 2124562773071076,
+                      "limit": 9223372036854776000,
+                      "flags": 1,
+                      "ext": {
+                        "v1": {
+                          "liabilities": {
+                            "buying": 0,
+                            "selling": 0
+                          },
+                          "ext": {
+                            "v2": {
+                              "liquidity_pool_use_count": 1,
+                              "ext": "v0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              },
+              {
+                "updated": {
+                  "last_modified_ledger_seq": 57867582,
+                  "data": {
+                    "trustline": {
+                      "account_id": "GCSO6DAFG52JZDJOB2ZXY3FZBCFJIEINR2BXNA2TTTCMFAOL5SQMIPW6",
+                      "asset": {
+                        "credit_alphanum12": {
+                          "asset_code": "TwiNz",
+                          "issuer": "GDKS7XTNEVCPGVUT2ZPPOU5CHHF3NH6NX7P3ROSFSDAO6NQDS3C74Y6C"
+                        }
+                      },
+                      "balance": 2124562773073076,
+                      "limit": 9223372036854776000,
+                      "flags": 1,
+                      "ext": {
+                        "v1": {
+                          "liabilities": {
+                            "buying": 0,
+                            "selling": 0
+                          },
+                          "ext": {
+                            "v2": {
+                              "liquidity_pool_use_count": 1,
+                              "ext": "v0"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ext": "v0"
+                }
+              }
+            ]
+          }
+        ],
+        "tx_changes_after": [],
+        "soroban_meta": null
+      }
+    },
+    "ledger": 57867582,
+    "createdAt": "1751746432"
+  }
+}
